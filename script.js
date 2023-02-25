@@ -91,6 +91,7 @@ const whereAmI = async function () {
     try {
         const resPos = await getLocation();
         const { latitude: lat, longitude: lng } = resPos.coords;
+        console.log(lat,lng);
 
         // GET DATA FROM REVERSE GEO CODEING API
         const resGeo = await fetch(
