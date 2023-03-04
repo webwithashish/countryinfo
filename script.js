@@ -51,7 +51,7 @@ const renderCountry = function (data) {
                     +data.population * 0.000001
                 ).toFixed(1)} M. people</p>
                 <p class="country__row"><span>🗣️</span>${
-                    Object.values(data.languages)[0]
+                    Object.values(data.languages)
                 }</p>
                 <p class="country__row"><span>💰</span>${
                     Object.values(data.currencies)[0].name
